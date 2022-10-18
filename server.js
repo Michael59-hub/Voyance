@@ -26,5 +26,5 @@ io.on("connection", socket =>{
     })
 })
 
-server.listen(3000);
+server.listen("https://voyance.netlify.app/");
 
