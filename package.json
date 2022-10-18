@@ -1,0 +1,21 @@
+{
+  "name": "zoom",
+  "version": "1.0.0",
+  "description": "Making a video chat app",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Mickey59-hub",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "peer": "^0.6.1",
+    "socket.io": "^4.5.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

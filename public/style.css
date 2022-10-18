@@ -1,0 +1,43 @@
+#video-grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px grey;
+    border-top: 50px;
+    border-radius: 5px;
+    width: 70%;
+    justify-content: space-around;
+}
+video{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+h1{
+    align-self: center;
+    color: rgb(0, 204, 255);
+    font-size: 70px;
+    animation: 4s title infinite;
+    animation-delay: 3s;
+    font-family: cursive;
+    animation-direction: normal;
+}
+
+@keyframes title{
+    0%{
+        color:rgb(0, 204, 255);
+    }
+    25%{
+        color:rgb(0, 140, 255);
+    }
+    50%{
+        color:rgb(0, 89, 255);
+    }
+    75%{
+        color:rgb(0, 68, 255);
+    }
+    100%{
+        color:rgb(0, 26, 255);
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="peerjs.min.js"></script>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <!-- the defer on both scripts is very important because if the page fires before the script has loaded
+    there'll be an error -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const roomID= "<%= roomId %>";
+    </script>
+</head>
+<body>
+    <div class="main">
+        <h1>Voyance</h1>
+        <div id="video-grid"></div>
+    </div>
+</body>
+</html>
