@@ -15,6 +15,14 @@ app.get("/:room", (req,res)=>{
     res.render("room", {roomId: req.params.room});
 });
 
+var ExpressPeerServer = require("peer").ExpressPeerServer;    
+var options = {
+  debug: true,
+  allow_discovery: true,
+};
+let peerServer = ExpressPeerServer(server, options);
+app.use("/", peerServer);
+
 io.on("connection", socket =>{
     socket.on("join-room", (roomId, userId) =>{
         console.log(roomId, userId);

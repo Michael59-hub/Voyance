@@ -1,8 +1,9 @@
 const socket = io("/");
 let username = "Michael";
 const myPeer = new Peer(undefined, {
-    host: "/",
-    port: "3001",
+    host: "/https://scpex.herokuapp.com",
+    port: "",
+    path: "/",
 });
 const peers = {};
 const videoGrid = document.getElementById("video-grid");
